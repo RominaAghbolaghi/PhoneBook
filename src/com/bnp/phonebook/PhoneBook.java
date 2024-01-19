@@ -70,10 +70,10 @@ public class PhoneBook {
         else
             System.out.println("******* Phonebook list *******");
 //        for (int i = 0; i < contactNames.size(); i++)
-//        for (int i = 0; i < contacts.size(); i++)
-        for (Contact contact : contacts)
 //            System.out.println("Name: " + contactNames.get(i) + "    Phone number: " + contactNumbers.get(i));
+//        for (int i = 0; i < contacts.size(); i++)
 //            System.out.println("Name: " + contacts.get(i).name + "    Phone number: " + contacts.get(i).number);
+        for (Contact contact : contacts)
             System.out.println("Name: " + contact.name + "    Phone number: " + contact.number);
     }
 }
