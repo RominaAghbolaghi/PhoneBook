@@ -55,14 +55,18 @@ public class PhoneBook {
         newContact.setName(scanner.nextLine());
 //        System.out.println("Your contact's name is: " + name + "\n");
 //        System.out.println("Your contact's name is: " + newContact.name + "\n");
-        System.out.println("Your contact's name is: " + newContact.getName()+ "\n");
+//        System.out.println("Your contact's name is: " + newContact.getName()+ "\n");
+        System.out.println(newContact.contactList());
         System.out.print(ANSI_CYAN + "Enter your contact's number: " + ANSI_RESET);
 //        String number = scanner.nextLine();
 //        newContact.number = scanner.nextLine();
-        newContact.setNumber(scanner.nextLine());
+//        newContact.setNumber(scanner.nextLine());
+        newContact.setNumber(scanner.nextInt());
+        scanner.nextLine();
 //        System.out.println("Your contact's number is: " + number + "\n");
 //        System.out.println("Your contact's number is: " + newContact.number + "\n");
-        System.out.println("Your contact's number is: " + newContact.getNumber() + "\n");
+//        System.out.println("Your contact's number is: " + newContact.getNumber() + "\n");
+        System.out.println(newContact.phoneList());
         contacts.add(newContact);
 //        contactNames.add(name);
 //        contactNumbers.add(number);
@@ -78,7 +82,10 @@ public class PhoneBook {
 //            System.out.println("Name: " + contacts.get(i).name + "    Phone number: " + contacts.get(i).number);
             for (Contact contact : contacts)
 //                System.out.println("Name: " + contact.name + "    Phone number: " + contact.number);
-                System.out.println("Name: " + contact.getName() + "    Phone number: " + contact.getNumber());
+//                System.out.println("Name: " + contact.getName() + "    Phone number: " + contact.getNumber());
+//                System.out.println(contact.phonebookList());
+//                System.out.println(contact.toString());
+                System.out.println(contact);
         } else {
             System.out.println("There is not yet any contact in your phonebook!");
         }
